@@ -66,3 +66,8 @@ $ git remote add origin git@server-name:path/repo-name.git
 $ git push -u origin master
 此后，每次本地提交
 $ git push origin master
+
+15 克隆一个本地库
+$ git clone git@github.com:fuerlai/git_learn.git
+要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone命令克隆。
+Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快。
