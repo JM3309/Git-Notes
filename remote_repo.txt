@@ -34,3 +34,11 @@ error: failed to push some refs to 'git@github.com:fuerlai/git_learn.git'
 $ git pull --rebase origin master
 执行上面代码后可以看到本地代码库中多了README.md文件
 然后再执行上传
+
+6 下行命令之后报错
+$ git remote add origin git@github.com:fuerlai/learn_dl_python3.git
+bash: $'\302\203git': command not found
+解决办法
+$ git status 
+$ git remote add origin git@github.com:fuerlai/learn_dl_python3.git
+$ ssh -T git@github.com
