@@ -58,3 +58,11 @@ $ git commit -m "del test.txt"
 $ git checkout -- test.txt
 git checkout其实是用版本库里的版本替换工作区的版本
 无论工作区是修改还是删除，都可以“一键还原”
+
+13 关联一个远程库，
+$ git remote add origin git@server-name:path/repo-name.git
+
+14 关联之后，第一次推送master分支的所有内容
+$ git push -u origin master
+此后，每次本地提交
+$ git push origin master
