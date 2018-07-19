@@ -164,6 +164,7 @@ Markdown | Less | Pretty
 % 内嵌HTML(没有demo)
 
 % 视频
+
 [![IMAGE ALT TEXT HERE](http://i2.hdslb.com/bfs/archive/85dc88834df3825b6bf5a318386500c1bbb50504.jpg@160w_100h.jpg)](https://www.bilibili.com/video/av26945253/?spm_id_from=333.334.chief_recommend.16)
 
 来源：
