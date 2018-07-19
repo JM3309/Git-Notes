@@ -1,8 +1,8 @@
 git_learn
 ==========
 
-> * Git is a distributed version control system.
-> * Git is free software distributed under the GPL.
+ * Git is a distributed version control system.
+ * Git is free software distributed under the GPL.
 
 # 1. git安装后设置全局变量
 
@@ -80,4 +80,3 @@ git_learn
 #### $ git clone git@github.com:fuerlai/git_learn.git
 > * 要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone命令克隆。
 > * Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快。
-
