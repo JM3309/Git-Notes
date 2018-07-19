@@ -109,7 +109,7 @@ paragraph3
 
 这是一段文字[^1]
 
-这又是一个一段文字[^n]
+这又是一段文字[^n]
 
 [^1]: This is my first footnote
 [^n]: Visit http://ghost.org
@@ -118,6 +118,9 @@ paragraph3
 % 图片
 
 ![内嵌式](pic1.png "图片的文字")
+![引用式][pic]
+
+[pic]: pic1.png "图片的文字"
 
 % 代码
 
