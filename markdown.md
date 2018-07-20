@@ -196,18 +196,18 @@ paragraph3
 ### 4.8 图片
 
 ```markdown
-![内嵌式](pic1.png "图片的文字")
+![内嵌式](https://github.com/fuerlai/git_learn/pic1.png "图片的文字")
 
 ![引用式][pic]
-[pic]: pic1.png "图片的文字"
+[pic]: https://github.com/fuerlai/git_learn/pic1.png "图片的文字"
 ```
 
  效果如下：
 
-![内嵌式](pic1.png "图片的文字")
+![内嵌式](https://github.com/fuerlai/git_learn/pic1.png "图片的文字")
 
 ![引用式][pic]
-[pic]: pic1.png "图片的文字"
+[pic]: https://github.com/fuerlai/git_learn/pic1.png "图片的文字"
 
 ### 4.9 代码
 
