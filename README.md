@@ -169,3 +169,5 @@ git clone git@github.com:fuerlai/git_learn.git
 
 * 要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone命令克隆。
 * Git支持多种协议，包括 [**https** 协议](https://en.wikipedia.org/wiki/HTTPS) ，但通过 [**ssh**](https://zh.wikipedia.org/wiki/Secure_Shell) 支持的原生 [**git** 协议](https://git-scm.com/book/zh/v1/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E5%8D%8F%E8%AE%AE) 速度最快。
+
+> **资料来源**：[廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
