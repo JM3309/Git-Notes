@@ -52,7 +52,7 @@ git branch -d dev
 git branch
 ```
 
-## 2. 分支操作常用命令
+## 2. 分支操作
 
 ### 2.1 查看分支
 
@@ -176,3 +176,13 @@ git log --graph
 **冲突解决** 的示意图：
 
 ![conflict2](conflict2.png "conflict2")
+
+## 4. 分支管理策略
+
+## 5. Bug分支
+
+## 6. Feature分支
+
+## 7. 多人协作
+
+参考：[廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375840202368c74be33fbd884e71b570f2cc3c0d1dcf000)
