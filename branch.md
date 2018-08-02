@@ -121,7 +121,7 @@ CONFLICT (content): Merge conflict in readme.txt
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
-冲突的示意图：
+**冲突** 的示意图：
 
 ![conflict](conflict.png "conflict")
 
@@ -173,3 +173,6 @@ git log --graph --pretty=oneline --abbrev-commit
 git log --graph
 ```
 
+**冲突解决** 的示意图：
+
+![conflict2](conflict2.png "conflict2")
