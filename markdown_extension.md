@@ -418,4 +418,6 @@ $$
 
 [Markdown 公式指导手册](https://www.zybuluo.com/codeep/note/163962)
 
+[markdown完美支持latex](https://whaozl.github.io/2016/08/07/tool-markdown-latex.html)
+
 [Cmd Markdown 编辑阅读器](https://www.zybuluo.com/mdeditor)
