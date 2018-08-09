@@ -385,16 +385,21 @@ $$
 |\prime|$\prime$|\int|$\int$|\iint|$\iint$|\iiint|$\iiint$
 |\oint|$\oint$|\lim|$\lim$|\infty|$\infty$|\nabla|$\nabla$
 
-|输入|显示|输入|显示|输入|显示|输入|显示|
-|----|----|----|----|----|----|----|----|
-|\because|$\because$|\therefore|$\therefore$|\forall|$\forall$|\exists|$\exists$
-|\not=|$\not=$|\not>|$\not>$|\not\subset|$\not\subset$
+|输入|显示|输入|显示|
+|----|----|----|----|
+|\because|$\because$|\therefore|$\therefore$|
+|\forall|$\forall$|\exists|$\exists$
+|\not=|$\not=$|\not>|$\not>$|
+|\not\subset|$\not\subset$
 
-|输入|显示|输入|显示|输入|显示|输入|显示|
-|----|----|----|----|----|----|----|----|
-|\uparrow|$\uparrow$|\downarrow|$\downarrow$|\Uparrow|$\Uparrow$|\Downarrow|$\Downarrow$
-|\rightarrow|$\rightarrow$|\leftarrow|$\leftarrow$|\Rightarrow|$\Rightarrow$|\Leftarrow|$\Leftarrow$
-|\longrightarrow|$\longrightarrow$|\longleftarrow|$\longleftarrow$|\Longrightarrow|$\Longrightarrow$|\Longleftarrow|$\Longleftarrow$
+|输入|显示|输入|显示|
+|----|----|----|----|
+|\uparrow|$\uparrow$|\downarrow|$\downarrow$|
+|\Uparrow|$\Uparrow$|\Downarrow|$\Downarrow$
+|\rightarrow|$\rightarrow$|\leftarrow|$\leftarrow$|
+|\Rightarrow|$\Rightarrow$|\Leftarrow|$\Leftarrow$
+|\longrightarrow|$\longrightarrow$|\longleftarrow|$\longleftarrow$|
+|\Longrightarrow|$\Longrightarrow$|\Longleftarrow|$\Longleftarrow$
 
 |输入|对用字体|
 |----|--------|
