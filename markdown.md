@@ -1,5 +1,30 @@
 # markdown
 
+## 目录
+
+- [markdown](#markdown)
+    - [目录](#%E7%9B%AE%E5%BD%95)
+    - [1. Markdown 使用场景](#1-markdown-%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF)
+    - [2. Markdown安装与环境配置](#2-markdown%E5%AE%89%E8%A3%85%E4%B8%8E%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE)
+        - [2.1 Sublime Text](#21-sublime-text)
+        - [2.2 Webstorn](#22-webstorn)
+        - [2.3 vscode](#23-vscode)
+    - [3. 关于Sublime Text](#3-%E5%85%B3%E4%BA%8Esublime-text)
+    - [4. demo](#4-demo)
+        - [4.1 标题](#41-%E6%A0%87%E9%A2%98)
+        - [4.2 水平线](#42-%E6%B0%B4%E5%B9%B3%E7%BA%BF)
+        - [4.3 字体](#43-%E5%AD%97%E4%BD%93)
+        - [4.4 列表](#44-%E5%88%97%E8%A1%A8)
+        - [4.5 段落就是加空行](#45-%E6%AE%B5%E8%90%BD%E5%B0%B1%E6%98%AF%E5%8A%A0%E7%A9%BA%E8%A1%8C)
+        - [4.6 链接](#46-%E9%93%BE%E6%8E%A5)
+        - [4.7 脚注](#47-%E8%84%9A%E6%B3%A8)
+        - [4.8 图片](#48-%E5%9B%BE%E7%89%87)
+        - [4.9 代码](#49-%E4%BB%A3%E7%A0%81)
+        - [4.10 表格](#410-%E8%A1%A8%E6%A0%BC)
+        - [4.11 引用](#411-%E5%BC%95%E7%94%A8)
+        - [4.12 视频](#412-%E8%A7%86%E9%A2%91)
+    - [更多资源](#%E6%9B%B4%E5%A4%9A%E8%B5%84%E6%BA%90)
+
 ## 1. Markdown 使用场景
 
 * 学习笔记
@@ -30,7 +55,7 @@
 
 **Visual Studio Code** 自带 **markdown** 预览，所以不需要安装插件，不过可以安装语法高亮主题
 
-## 3. 关于 **Sublime Text**
+## 3. 关于Sublime Text
 
 * MarkdownEditing 主题、自动补齐等功能
 * MarkdownPreview 在浏览器预览
@@ -221,6 +246,8 @@ s = "Python语法高亮"
 print s
 ```
 
+[Markdown代码高亮支持的语言](https://www.jianshu.com/p/f02d5a3736ba)
+
 ```txt
 没有指明语言(txt)，所有没有语法高亮。
 ```
@@ -271,8 +298,12 @@ Markdown | Less | Pretty
 
 [![IMAGE ALT TEXT HERE](http://i2.hdslb.com/bfs/archive/85dc88834df3825b6bf5a318386500c1bbb50504.jpg@160w_100h.jpg)](https://www.bilibili.com/video/av26945253/?spm_id_from=333.334.chief_recommend.16)
 
-参考：
+## 更多资源
 
 [GitBook](https://legacy.gitbook.com/book/chrisniael/gitbook-documentation/details)
 
 [markdown官方文档](https://markdown-zh.readthedocs.io/en/latest/)
+
+[Learning-Markdown (Markdown 入门参考)](http://xianbai.me/learn-md/index.html)
+
+[Markdown语法手册](https://www.zybuluo.com/xxliixin1993/note/125827)
