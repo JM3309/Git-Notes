@@ -366,9 +366,9 @@ $$
 |----|----|----|----|----|----|----|----|
 |\pm|$\pm$|\times|$\times$|\div|$\div$|\mid|$\mid$
 |\nmid|$\nmid$|\cdot|$\cdot$|\circ|$\circ$|\ast|$\ast$
-|\bigodot|$\bigodot$|\bigotimes|$\bigotimes$|\leq|$\leq$|\geq|$\geq$
+|\lt|$\lt$|\gt|$\gt$|\leq|$\leq$|\geq|$\geq$
 |\neq|$\neq$|\approx|$\approx$|\equiv|$\equiv$|\sum|$\sum$
-|\prod|$\prod$|\coprod|$\coprod$|
+|\prod|$\prod$|\coprod|$\coprod$|\bigodot|$\bigodot$|\bigotimes|$\bigotimes$|
 
 |输入|显示|输入|显示|输入|显示|输入|显示|
 |----|----|----|----|----|----|----|----|
