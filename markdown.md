@@ -300,7 +300,7 @@ Markdown | Less | Pretty
 
 ## 更多资源
 
-[GitBook](https://legacy.gitbook.com/book/chrisniael/gitbook-documentation/details)
+[GitBook](https://chrisniael.gitbooks.io/gitbook-documentation/content/format/markdown.html)
 
 [markdown官方文档](https://markdown-zh.readthedocs.io/en/latest/)
 
