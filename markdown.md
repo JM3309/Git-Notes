@@ -23,6 +23,7 @@
         - [4.10 表格](#410-%E8%A1%A8%E6%A0%BC)
         - [4.11 引用](#411-%E5%BC%95%E7%94%A8)
         - [4.12 视频](#412-%E8%A7%86%E9%A2%91)
+        - [4.13 转义字符](#413-%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6)
     - [更多资源](#%E6%9B%B4%E5%A4%9A%E8%B5%84%E6%BA%90)
 
 ## 1. Markdown 使用场景
@@ -297,6 +298,32 @@ Markdown | Less | Pretty
 ```
 
 [![IMAGE ALT TEXT HERE](http://i2.hdslb.com/bfs/archive/85dc88834df3825b6bf5a318386500c1bbb50504.jpg@160w_100h.jpg)](https://www.bilibili.com/video/av26945253/?spm_id_from=333.334.chief_recommend.16)
+
+### 4.13 转义字符
+
+```markdown
+空格：&nbsp;
+小于号：&lt;
+大于号：&gt;
+和号：&amp;
+双引号：&quot;
+单引号：&apos;
+版权：&copy;
+注册商标：&reg;
+乘号：&times;
+除号：&divide;
+```
+
+空格：&nbsp;
+小于号：&lt;
+大于号：&gt;
+和号：&amp;
+双引号：&quot;
+单引号：&apos;
+版权：&copy;
+注册商标：&reg;
+乘号：&times;
+除号：&divide;
 
 ## 更多资源
 
