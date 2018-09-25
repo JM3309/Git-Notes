@@ -6,20 +6,20 @@ branch
 ## 1.1. 创建并切换分支
 
 ```git
-git checkout -b dev
+$ git checkout -b dev
 ```
 
 相当于下面两行命令：
 
 ```git
-git branch dev
-git checkout dev
+$ git branch dev
+$ git checkout dev
 ```
 
 ## 1.2. 查看当前所有分支
 
 ```git
-git branch
+$ git branch
 ```
 
 会列出所有分支，当前分支前面标有 `*`
@@ -27,20 +27,20 @@ git branch
 ## 1.3. 在dev分支上工作
 
 ```git
-git add readme.txt
-git commit -m "readme.txt"
+$ git add readme.txt
+$ git commit -m "readme.txt"
 ```
 
 ## 1.4. 切换回 master
 
 ```git
-git checkout master
+$ git checkout master
 ```
 
 ## 1.5. dev 合并到 master
 
 ```git
-git merge dev
+$ git merge dev
 ```
 
 **注意**：默认合并为 **“快进模式”(Fast-forward)**
@@ -48,8 +48,8 @@ git merge dev
 ## 1.6. 删除 dev 分支
 
 ```git
-git branch -d dev
-git branch
+$ git branch -d dev
+$ git branch
 ```
 
 # 2. 分支操作
@@ -57,37 +57,37 @@ git branch
 ## 2.1. 查看分支
 
 ```git
-git branch
+$ git branch
 ```
 
 ## 2.2. 创建分支
 
 ```git
-git branch <name>
+$ git branch <name>
 ```
 
 ## 2.3. 切换分支
 
 ```git
-git checkout <name>
+$ git checkout <name>
 ```
 
 **创建 + 切换**分支:
 
 ```git
-git checkout -b <name>
+$ git checkout -b <name>
 ```
 
 ## 2.4. 合并某分支到当前分支
 
 ```git
-git merge <name>
+$ git merge <name>
 ```
 
 ## 2.5. 删除分支
 
 ```git
-git branch -d <name>
+$ git branch -d <name>
 ```
 
 # 3. 解决冲突
@@ -96,28 +96,28 @@ git branch -d <name>
 
 ```git
 <!-- 创建了一个名为 readme.txt 的文件 -->
-touch readme.txt
+$ touch readme.txt
 
 <!-- 创建并切换到一个新的分支 feature1 -->
-git checkout -b feature1
+$ git checkout -b feature1
 
 <!-- 在 readme.txt 文件中做修改 -->
 
 <!-- 提交在 feature1 分支下对 readme.txt 文件的修改 -->
-git add readme.txt
-git commit -m "modification on branch feature1"
+$ git add readme.txt
+$ git commit -m "modification on branch feature1"
 
 <!-- 切换到master分支 -->
-git checkout master
+$ git checkout master
 
 <!-- 在 readme.txt 文件中做修改，注意：为了效果，这次修改要和在 feature1 分支下的修改内容不相同 -->
 
 <!-- 提交在 master 分支下对 readme.txt 文件的修改 -->
-git add readme.txt
-git commit -m "modification on branch master"
+$ git add readme.txt
+$ git commit -m "modification on branch master"
 
 <!-- 在 master 分支下企图合并 featur1 分支，但是产生冲突！ -->
-git merge feature1
+$ git merge feature1
 
 Auto-merging readme.txt
 CONFLICT (content): Merge conflict in readme.txt
@@ -126,16 +126,16 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 **冲突** 的示意图：
 
-![conflict](assets/conflict.png "conflict")
+![冲突发生示意图](assets/conflict.png)
 
 ## 3.2. 冲突的查看
 
 ```git
 <!-- 查看冲突的具体情况 -->
-git status
+$ git status
 
 <!-- 查看冲突文件 -->
-cat readme.txt
+$ cat readme.txt
 
 readme.txt
 <<<<<<< HEAD
@@ -145,7 +145,7 @@ modification on branch feature1
 >>>>>>> feature1
 
 <!-- 查看git日志 -->
-git log --pretty=oneline
+$ git log --pretty=oneline
 ```
 
 Git 用```<<<<<<<```，```=======```，```>>>>>>>``` 标记出不同分支的内容。
@@ -156,26 +156,66 @@ Git 用```<<<<<<<```，```=======```，```>>>>>>>``` 标记出不同分支的内
 <!-- 修改 readme.txt 文件内容 -->
 
 <!-- 提交对冲突文件的修改 -->
-git add readme.txt
-git commit -m "conflict fixed"
+$ git add readme.txt
+$ git commit -m "conflict fixed"
 
 <!-- 删除 feature1 分支 -->
-git branch -d feature1
+$ git branch -d feature1
 ```
 
 ```git
 <!-- 看分支的合并情况 -->
-git log --graph --pretty=oneline --abbrev-commit
+$ git log --graph --pretty=oneline --abbrev-commit
 
 <!-- 看分支合并图 -->
-git log --graph
+$ git log --graph
 ```
 
 **冲突解决** 的示意图：
 
-![conflict2](assets/conflict2.png "conflict2")
+![冲突解决示意图](assets/conflict2.png)
 
 # 4. 分支管理策略
+
+合并分支时，如果可能，`Git`会用`Fast forward`模式，但这种模式下，删除分支后，会丢掉**分支信息**。如果要强制禁用`Fast forward`模式，`Git`就会在`merge`时生成一个新的`commit`，这样，从分支历史上就可以看出分支信息。
+
+```git
+<!-- 创建一个名为 hello.txt 的文件，做一些编辑并提交 -->
+$ touch hello.txt
+$ vi hello.txt
+$ git add hello.txt
+$ git commit -m "create hello.txt"
+
+<!-- 创建 dev 分支，编辑 hello.txt 文件并提交 -->
+$ git branch -b dev
+$ vi hello.txt
+$ git add hello.txt
+$ git commit -m "mod on dev"
+
+<!-- 切换到 master 分支 -->
+$ git checkout master
+
+<!-- 禁用 ff 模式合并 dev 分支 -->
+$ git merge --no-ff -m "merge with no-ff" dev
+
+<!-- 查看分支历史 -->
+$ git log --graph --pretty=oneline --abbrev-commit
+ev-commit 
+*   5c0f2cf merge with no-ff
+|\  
+| * 1b0ea6d mod on dev
+|/  
+* 43f740e create hello.txt
+```
+
+在实际开发中，我们应该按照几个**基本原则**进行分支管理：
+
+1. `master`分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活
+2. 干活都在`dev`分支上，也就是说，`dev`分支是不稳定的
+3. 比如1.0版本发布时，再把`dev`分支合并到`master`上，在`master`分支发布1.0版本
+4. 你和你的小伙伴们每个人都在`dev`分支上干活，每个人都有自己的分支，时不时地往`dev`分支上合并就可以了。
+
+![分支管理示意图](assets/branchs.png)
 
 # 5. Bug分支
 
