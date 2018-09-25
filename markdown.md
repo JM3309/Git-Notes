@@ -1,32 +1,7 @@
-# markdown
+Markdown
+======
 
-## 目录
-
-- [markdown](#markdown)
-    - [目录](#%E7%9B%AE%E5%BD%95)
-    - [1. Markdown 使用场景](#1-markdown-%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF)
-    - [2. Markdown安装与环境配置](#2-markdown%E5%AE%89%E8%A3%85%E4%B8%8E%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE)
-        - [2.1 Sublime Text](#21-sublime-text)
-        - [2.2 Webstorn](#22-webstorn)
-        - [2.3 vscode](#23-vscode)
-    - [3. 关于Sublime Text](#3-%E5%85%B3%E4%BA%8Esublime-text)
-    - [4. demo](#4-demo)
-        - [4.1 标题](#41-%E6%A0%87%E9%A2%98)
-        - [4.2 水平线](#42-%E6%B0%B4%E5%B9%B3%E7%BA%BF)
-        - [4.3 字体](#43-%E5%AD%97%E4%BD%93)
-        - [4.4 列表](#44-%E5%88%97%E8%A1%A8)
-        - [4.5 段落就是加空行](#45-%E6%AE%B5%E8%90%BD%E5%B0%B1%E6%98%AF%E5%8A%A0%E7%A9%BA%E8%A1%8C)
-        - [4.6 链接](#46-%E9%93%BE%E6%8E%A5)
-        - [4.7 脚注](#47-%E8%84%9A%E6%B3%A8)
-        - [4.8 图片](#48-%E5%9B%BE%E7%89%87)
-        - [4.9 代码](#49-%E4%BB%A3%E7%A0%81)
-        - [4.10 表格](#410-%E8%A1%A8%E6%A0%BC)
-        - [4.11 引用](#411-%E5%BC%95%E7%94%A8)
-        - [4.12 视频](#412-%E8%A7%86%E9%A2%91)
-        - [4.13 转义字符](#413-%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6)
-    - [更多资源](#%E6%9B%B4%E5%A4%9A%E8%B5%84%E6%BA%90)
-
-## 1. Markdown 使用场景
+# 1. 使用场景
 
 * 学习笔记
 * 演讲稿
@@ -36,52 +11,55 @@
 * 教学讲义
 * 说明文档
 * 电子邮件
-* 只要有写作的地方，都可以使用 **Markdown** 来书写
+* 只要有写作的地方，都可以使用 `Markdown` 来书写
 
-## 2. Markdown安装与环境配置
+# 2. 安装与环境配置
 
-### 2.1 Sublime Text
+## 2.1. Sublime Text
 
-按下键 ```Ctrl + Shift + p``` 调出命令面板，找到 ```Package Control: install Pakage``` 这一项。搜索 ```markdown preview``` ，点击安装。
+按下键 `Ctrl + Shift + p` 调出命令面板，找到 `Package Control: install Pakage` 这一项。搜索 `markdown preview` ，点击安装。
 
-```Markdown Preview``` 较常用的功能是 ```preview in browser``` 和 ```Export HTML in Sublime Text``` ，前者可以在浏览器看到预览效果，后者可将 **markdown** 保存为 html 文件。
+`Markdown Preview` 较常用的功能是 `preview in browser` 和 `Export HTML in Sublime Text` ，前者可以在浏览器看到预览效果，后者可将 `markdown` 保存为 `html` 文件。
 
-```preview in browser``` 据称是实时的，但是实践上还是需要在 **Sublime Text** 保存，然后浏览器刷新才能看到新的效果，好在 **markdown** 写得多的话也不需要每敲一行看一次效果。
+`preview in browser` 据称是实时的，但是实践上还是需要在 Sublime Text 保存，然后浏览器刷新才能看到新的效果，好在 `Markdown` 写得多的话也不需要每敲一行看一次效果。
 
-### 2.2 Webstorn
+## 2.2. Webstorn
 
-打开 **webstorm** ，```File```-->```Setting```-->输入```plugin```-->```Install JetBrains plugin...```-->输入```markdown```-->点击右边的 ```Install``` ，安装完，重启 **webstorm**。
+打开 **Webstorm** ，`File` --> `Setting` -->输入 `plugin` --> `Install JetBrains plugin...` -->输入 `Markdown` --> 点击右边的 `Install` ，安装完，重启 Webstorm。
 
-### 2.3 vscode
+## 2.3. VScode
 
-**Visual Studio Code** 自带 **markdown** 预览，所以不需要安装插件，不过可以安装语法高亮主题
+**Visual Studio Code** 自带 `Markdown` 预览，所以不需要安装插件。当然为了效率，推荐安装几款插件：
 
-## 3. 关于Sublime Text
+* Markdown Preview Github Styling -- 显示出近乎Github的效果
+* Markdown Preview Enhanced -- 强大的预览工具
+* Markdown All in One -- 听名字就知道了
+* Markdown TOC -- 自动生成目录工具
 
-* MarkdownEditing 主题、自动补齐等功能
-* MarkdownPreview 在浏览器预览
-* MarkdownTOC 自动生成导航
-* Table Editor 自动表格编辑
-* packagecontrol Sublime 的插件生态系统网站
+笔者比较喜欢使用VScode作为书写 `Markdown` 的工具。
 
-## 4. demo
+## 2.4. Typora
 
-### 4.1 标题
+一款非常优雅的 `Markdown` 编辑器，适合初学者使用，功能上不如前三者强大。[Typora官方网址](https://www.typora.io/)
+
+# 3. Demo
+
+## 3.1. 标题
 
 ```markdown
-# h1
-## h2
-### h3
-#### h4
-##### h5
-###### h6
+ h1
+# h2
+## h3
+### h4
+#### h5
+##### h6
 h1
 ======
 h2
 ------
 ```
 
-### 4.2 水平线
+## 3.2. 水平线
 
 ```markdown
 * * *
@@ -91,7 +69,7 @@ h2
 ---------------------------------------
 ```
 
-### 4.3 字体
+## 3.3. 字体
 
 ```markdown
 **Bold**
@@ -103,7 +81,7 @@ _italic2_
 
 _**组合强调**_
 
-~~delete~~ or <del>del</del>
+~~delete~~
 ```
 
 效果如下：
@@ -119,7 +97,7 @@ _**组合强调**_
 
 ~~delete~~
 
-### 4.4 列表
+## 3.4. 列表
 
 ```markdown
 * java
@@ -151,7 +129,7 @@ _**组合强调**_
 2. python
 3. javascript
 
-### 4.5 段落就是加空行
+## 3.5. 段落就是加空行
 
 paragraph1
 
@@ -159,7 +137,7 @@ paragraph2
 
 paragraph3
 
-### 4.6 链接
+## 3.6. 链接
 
 ```markdown
 [内嵌式链接](https://www.google.com)
@@ -197,7 +175,7 @@ paragraph3
 [1]: http://slashdot.org
 [link text itself]: http://www.reddit.com
 
-### 4.7 脚注
+## 3.7. 脚注
 
 ```markdown
 这是一段文字[^1]
@@ -219,23 +197,24 @@ paragraph3
 [^n]: Visit http://ghost.org
 [^n]: A final footnote
 
-### 4.8 图片
+## 3.8. 图片
 
 ```markdown
-![内嵌式](https://github.com/fuerlai/git_learn/pic1.png "图片的文字")
+![内嵌式](assets/pic1.png "图片的文字")
 
+<!-- 引用式常常不起作用，推荐使用内嵌式 -->
 ![引用式][pic]
-[pic]: https://github.com/fuerlai/git_learn/pic1.png "图片的文字"
+[pic]: assets//pic1.png "图片的文字"
 ```
 
- 效果如下：
+效果如下：
 
-![内嵌式](pic1.png "图片的文字")
+![内嵌式](assets/pic1.png "图片的文字")
 
 ![引用式][pic]
-[pic]: pic1.png "图片的文字"
+[pic]: assets/pic1.png "图片的文字"
 
-### 4.9 代码
+## 3.9. 代码
 
 ```javascript
 var s = "JavaScript语法高亮";
@@ -253,7 +232,7 @@ print s
 没有指明语言(txt)，所有没有语法高亮。
 ```
 
-### 4.10 表格
+## 3.10. 表格
 
 ```markdown
 | Tables        | Are           | Cool  |
@@ -281,7 +260,7 @@ Markdown | Less | Pretty
 *Still* | `renders` | **nicely**
 1 | 2 | 3
 
-### 4.11 引用
+## 3.11. 引用
 
 > 在邮件中块引用中很方便用来仿真文本的回复。
 >
@@ -291,7 +270,7 @@ Markdown | Less | Pretty
 
 > 当这行很长的文字被包裹的时候，它依然会被恰当的引用。让我们继续写下去来确保包裹它时对于每个人来说它足够长。你可以*在*块引用中使用其它**Markdown**。
 
-### 4.12 视频
+## 3.12. 视频
 
 ```markdown
 [![IMAGE ALT TEXT HERE](http://i2.hdslb.com/bfs/archive/85dc88834df3825b6bf5a318386500c1bbb50504.jpg@160w_100h.jpg)](https://www.bilibili.com/video/av26945253/?spm_id_from=333.334.chief_recommend.16)
@@ -299,7 +278,7 @@ Markdown | Less | Pretty
 
 [![IMAGE ALT TEXT HERE](http://i2.hdslb.com/bfs/archive/85dc88834df3825b6bf5a318386500c1bbb50504.jpg@160w_100h.jpg)](https://www.bilibili.com/video/av26945253/?spm_id_from=333.334.chief_recommend.16)
 
-### 4.13 转义字符
+## 3.13. 转义字符
 
 ```markdown
 空格：&nbsp;
@@ -325,7 +304,8 @@ Markdown | Less | Pretty
 乘号：&times;
 除号：&divide;
 
-## 更多资源
+更多资源
+======
 
 [GitBook](https://chrisniael.gitbooks.io/gitbook-documentation/content/format/markdown.html)
 
@@ -334,3 +314,4 @@ Markdown | Less | Pretty
 [Learning-Markdown (Markdown 入门参考)](http://xianbai.me/learn-md/index.html)
 
 [Markdown语法手册](https://www.zybuluo.com/xxliixin1993/note/125827)
+
