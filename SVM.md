@@ -413,11 +413,11 @@ $ svn cp svn://192.168.1.130/hello/trunk svn://192.168.1.130/hello/branch -m "se
 * branch -- 分支版本
 * tag -- 已发布版本
 
-# 高级应用
+# 8. 高级应用
 
 SVN 服务器级别的应用，使用这些应用 SVN 服务需要重启，影响使用用户
 
-## hooks 钩子应用
+## 8.1. hooks 钩子应用
 
 何为钩子？当执行某些特定操作时触发预先设定好的任务。
 
@@ -443,7 +443,7 @@ $ svnserve -d -r /svnroot/
 
 把 SVN 构建在 GIT 之上，利用钩子实现的！
 
-## 版本库精简与丢弃
+## 8.2. 版本库精简与丢弃
 
 ```shell
 $ killall svnserve
@@ -457,7 +457,7 @@ $ svnserve -d -r /svnroot/
 
 做出版本库的精简后，之前的工作副本就不能提交了，需要重新检出工作副本
 
-## 版本库的迁移和switch重定向
+## 8.3. 版本库的迁移和switch重定向
 
 迁移一般发生在服务器更换时，迁移实际上与精简是一样的。
 
@@ -482,3 +482,9 @@ $ svn switch
 $ svn sw --relocate svn://192.168.1.130/world svn://192.168.1.130/newworld
 ```
 
+慕课网课程资源
+======
+
+[版本管理工具介绍---SVN篇](https://www.imooc.com/learn/109)
+
+[SVN从入门到放弃](https://www.imooc.com/learn/845)
