@@ -1,11 +1,9 @@
-git_learn
+learn_git
 ========
 
 > Git is a distributed [Version Control](https://en.wikipedia.org/wiki/Version_control) System.
 >
 > Git is free software distributed under the [GPL](https://baike.baidu.com/item/GPL/2357903).
-
-<!-- TOC -->
 
 - [1. git安装后设置全局变量](#1-git安装后设置全局变量)
 - [2. 初始化一个Git仓库](#2-初始化一个git仓库)
@@ -28,8 +26,6 @@ git_learn
 - [13. 关联远程库](#13-关联远程库)
 - [14. 提交代码](#14-提交代码)
 - [15. 克隆一个本地库](#15-克隆一个本地库)
-
-<!-- /TOC -->
 
 # 1. git安装后设置全局变量
 
